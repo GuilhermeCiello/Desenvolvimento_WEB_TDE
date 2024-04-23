@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+.container2 {
+    width: 50%;
+    display: flex;
+}
+
+.container img{
+
+}
+
+.container h2{
+    text-align: center;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-left: 75%;
+}
+
+
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #3c92f5;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#sobre{
+    background-color: #f0f0f0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#servicos.azul {
+    background-color: #3c92f5;
+    color: #fff;
+}
+
+.servicos-container {
+    font-size: 0;
+    text-align: center;
+}
+
+.servicos {
+    display: inline-block; 
+    width: calc(25% - 20px); 
+    margin: 10px 5px; 
+    vertical-align: top; 
+    font-size: initial;  
+}
+
+.servicos img {
+    max-width: 100%;
+    max-height: 130px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.servicos img:hover{
+    transform: scale(1.1);
+    border: blue solid 2px;
+}
+.servicos p{
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ffcd32;
+    color: blue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3c92f5;
+}
+
+
+.redes-sociais a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #3c92f5;
+}
+
+#sobre {
+    display: grid;
+    grid-template-areas: 'container imagem';
+    grid-gap: 30pxx;
+}
+#sobre .container {
+    overflow: hidden;
+    grid-area: container;
+}
+
+#sobre p {
+    width: 50%;
+    float: left;
+}
+
+#sobre img {
+    width: 50%;
+    float: right;
+    grid-area: imagem;
+}
+
+#mecanica{
+    background-color: #005596;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#mecanica .avaliacao{
+   margin-right: 15%;
+}
+
+#mecanica .numero{
+    margin-right: 5%;
+   
+}
+
+#mecanica a {
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#contato{
+    background-color:  #005596;
+}
+
+#contato h2, label{
+    color: #ffcd32;
+}
+
+#contato input{
+    border-radius: 5px;
+    border: none;
+}
+
+
+footer {
+    background-color: #005596;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: white 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes-sociais {
+    text-align: right;
+  
+}
+.endereco{
+    text-align: left;
+}
+.redes-sociais a {
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+    .container, .container2 {
+        width: 90%; 
+        margin: 0 auto;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu {
+        margin-left: 0;
+        flex-direction: column; 
+        align-items: center;
+
+    .menu li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    #sobre p, #sobre img {
+        width: 100%; 
+        float: none; 
+    }
+
+    footer {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    footer div, .redes-sociais {
+        text-align: center; 
+    }
+
+    footer div, .redes-sociais {
+        margin-bottom: 20px; 
+    }
+}
+}
